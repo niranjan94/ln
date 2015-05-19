@@ -18,6 +18,7 @@ android {
 
 def siteUrl = 'https://github.com/niranjan94/ln'      // Homepage URL of the library
 def gitUrl = 'https://github.com/niranjan94/ln.git'   // Git repository URL
+version = "1.0"
 group = "com.niranjan.ln"                            // Maven Group ID for the artifact
 
 dependencies {
@@ -72,11 +73,14 @@ task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
+javadoc.mustRunAfter sourcesJar
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
+javadocJar.mustRunAfter javadoc
+
 artifacts {
     archives javadocJar
     archives sourcesJar
@@ -99,3 +103,4 @@ bintray {
         publish = true
     }
 }
+bintrayUpload.mustRunAfter javadoc
