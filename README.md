@@ -1,4 +1,4 @@
-&nbsp;&nbsp;&nbsp;&nbsp;[![Download](https://api.bintray.com/packages/niranjan94/maven/Ln-AndroidLoggingSimplified/images/download.svg)](https://bintray.com/niranjan94/maven/Ln-AndroidLoggingSimplified/_latestVersion)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[![Download](https://api.bintray.com/packages/niranjan94/maven/Ln-AndroidLoggingSimplified/images/download.svg)](https://bintray.com/niranjan94/maven/Ln-AndroidLoggingSimplified/_latestVersion) [![StyleCI](https://styleci.io/repos/35885989/shield)](https://styleci.io/repos/35885989)<br>
 ![Ln Logo](https://raw.githubusercontent.com/niranjan94/ln/master/icons/icon144x144.png)
 ### Ln - Android Logging Simplified
 **Ln** is a simple wrapper for Android's default Log implementation (`android.util.Log`). It is derived from RoboGuice's internal logging utility.
